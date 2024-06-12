@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using TodoList.API.Context;
+using TodoList.API.Repositories.Abstract;
+using TodoList.API.Repositories.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<TodoListContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("AppConnStr")));
+
+builder.Services.AddTransient<ITaskModelRepository, TaskModelRepository>();
+builder.Services.AddTransient<ISettingsModelRepository, SettingsModelRepository>();
 
 var app = builder.Build();
 
