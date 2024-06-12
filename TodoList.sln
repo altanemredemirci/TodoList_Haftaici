@@ -3,9 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{60815456-2698-4D74-9D58-2B103E956EAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{57823D0B-97A6-404C-8269-CA4ECA2B4EE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{595C1E12-4104-4536-9AF8-7B0B08079281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Core", "TodoList.Core\TodoList.Core.csproj", "{99198442-7AB1-4540-9467-7FDA88EBC807}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99198442-7AB1-4540-9467-7FDA88EBC807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99198442-7AB1-4540-9467-7FDA88EBC807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99198442-7AB1-4540-9467-7FDA88EBC807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99198442-7AB1-4540-9467-7FDA88EBC807}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99198442-7AB1-4540-9467-7FDA88EBC807} = {60815456-2698-4D74-9D58-2B103E956EAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB13E6D2-99C8-4D68-9FE1-99C625ABBE3C}
