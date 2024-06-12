@@ -5,10 +5,11 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using TodoList.Core.Enums;
+using TodoList.Core.Models.Common;
 
 namespace TodoList.Core.Models
 {
-    public class TaskModel
+    public class TaskModel:BaseModel
     {
         [JsonPropertyName("title")]
         public string Title { get; set; }
